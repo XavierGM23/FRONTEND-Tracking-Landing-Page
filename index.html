@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+</head>
+
+<body>
+  <div class="container ">
+
+
+    <!-- NAVBAR -->
+    <div class="navbar animate__animated animate__zoomInDown">
+      <div >
+        <img class="logo" src="images/logo.svg" alt="">
+      </div>
+      <div class="topnav" id="myTopnav">
+        <ul>
+          <li><a class="navbar_text bold sm-txt blue condensed uppercase" href="index.html">Product</a></li>
+          <li><a class="navbar_text bold sm-txt blue condensed uppercase" href="index.html">Features</a></li>
+          <li><a class="navbar_text bold sm-txt blue condensed uppercase" href="index.html">Pricing</a></li>
+          <li><span class="dot"></span></li>
+          <li><a class="navbar_text bold sm-txt grey condensed uppercase" href="index.html">Login</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="icon-img" src="images/icon-hamburger.svg" alt="more icon"></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="row">
+      <div class="col1 animate__animated animate__zoomInUp">
+        <div class="area1">
+          <span class="new bold white md-txt uppercase condensed">New</span>
+          <span class="mono regular light-grey sm-txt uppercase condensed sep1">Monograph Dashboard</span>
+        </div>
+        <p class="power bold blue lg-txt uppercase condensed">Powerful insights into your team</p>
+        <p class="project bold grey md-txt normal">Project planning and time tracking for agile teams</p>
+        <div class="btn-area">
+          <span class="schedule bold white sm-txt uppercase condensed">Schedule a demo</span>
+          <span class="see regular light-grey sm-txt uppercase condensed sep">to see a live preview</span>
+        </div>
+
+      </div>
+
+      <div class="col2 animate__animated animate__zoomInUp">
+      </div>
+    </div>
+
+  </div>
+
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive animate__animated animate__bounceInRight";
+    } else {
+      x.className = "topnav";
+    }
+    var i = document.querySelector(".icon-img");
+    if (i.src.match("images/icon-hamburger.svg"))
+    {
+      i.src = "images/icon-close.svg";
+    }
+    else {
+      i.src = "images/icon-hamburger.svg";
+    }
+  }
+  </script>
+
+
+</body>
+<!-- <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="mailto:xavi_steev@hotmail.com">Steven Xavier GM</a>.
+</div> -->
+
+</html>
